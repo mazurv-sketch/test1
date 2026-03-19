@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title> Олексій Навальний LIVE</title>
+  <style>
+    fieldset {
+      background-color: #00782a; /* світла заливка */
+      border: 2px solid #001407;
+      padding: 15px;
+	  font-size: 22px;
+    }
+    legend {
+      background-color: #ffcc00; /* інший колір */
+      padding: 7px 10px;
+      font-weight: bold;
+	  font-size: 30px;
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+	  font-size: 22px;
+    }
+	
+  </style>
+</head>
+<body>
+  <h2>Форма замовлення Novichok agent</h2>
+  <form action="mailto:yourmail@example.com" method="post">
+    <fieldset>
+      <legend>Дані замовника</legend>
+	  <img src="nav.jpg" width="300" height="300" alt="photo"> <img src="nav1.jpg" width="300" height="300" alt="photo"> <img src="czk.jpg" width="300" height="300" alt="photo"> 
+
+      <label>Ваше ім’я:
+        <input type="text" name="name" required>
+      </label>
+	  
+      <label>Дані для звязку:
+        <input type="text" name="name" required>
+      </label>
+
+      <label>Кількість речовини:</label>
+      <input type="radio" name="size" value="20 мл"> 20 мл
+      <input type="radio" name="size" value="40 мл"> 40 мл
+      <input type="radio" name="size" value="100 мл"> 100 мл
+      <label>Cпосіб доставки:</label>
+      <input type="checkbox" name="delivery"> Доставка
+      <input type="checkbox" name="pickup"> Самовивіз 
+    </fieldset>
+
+    <br>
+    <input type="submit" value="Відправити замовлення">
+    <input type="reset" value="Очистити форму">
+  </form>
+</body>
+</html>
